@@ -4140,3 +4140,29 @@ Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-10-30 16:10:32 -0700
+
+
+Started GET "/" for ::1 at 2016-10-30 16:19:09 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mGolf Load (0.7ms)[0m  SELECT "golfs".* FROM "golfs"
+  Rendered welcome/index.html.erb within layouts/application (59.7ms)
+Completed 200 OK in 649ms (Views: 603.9ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/assets/application.self-8034777e63be5d4bb32d10b25dd6941499e8931a5398873fc53859de7ed465a0.css?body=1" for ::1 at 2016-10-30 16:19:11 -0700
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for ::1 at 2016-10-30 16:19:11 -0700
+
+
+Started GET "/assets/welcome.self-6f0877a22c66c0354b031005d6bddf68f0034eadbbc8d9037b2abf78e51064f5.css?body=1" for ::1 at 2016-10-30 16:19:11 -0700
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for ::1 at 2016-10-30 16:19:11 -0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-10-30 16:19:11 -0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-10-30 16:19:11 -0700
