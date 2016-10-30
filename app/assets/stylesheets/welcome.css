@@ -1,0 +1,60 @@
+.search {
+  margin: auto;
+  width: 800px;
+  padding: 20px;
+}
+
+.searchbox {
+  font-size:15pt;
+  height:40px;
+  width:800px;
+}
+
+.leftblock {
+    float: left;
+    max-width: 400px;
+    max-height: 800px;
+    margin: 0px 10px 10px 10px;
+    padding: 1em;
+    border: 1px solid gray;
+    height: 400px;
+}
+
+.rightblock {
+    margin-left: 410px;
+    padding: 1em;
+    margin: 10px;
+    border: 1px solid gray;
+    overflow: hidden;
+    height: 400px;
+}
+
+.separator {
+  margin: auto;
+  padding: 20px;
+  width: 1500px;
+}
+
+.container {
+  width: 100%;
+}
+
+.new_golf {
+  padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}

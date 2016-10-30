@@ -1,0 +1,55 @@
+<div class="search">
+ <input type="text" class="searchbox" name="search" placeholder="Search..">
+</div>
+
+<div class="separator">
+  <hr>
+</div>
+
+<div class="container">
+  <div class="leftblock">
+    <h2> Add a golf course:</h2>
+    <%= form_for(@new_golf, url: root_path)  do |form| %>
+    <form class="form">
+      Course name:
+      <br>
+        <%= form.text_field :name, placeholder: "Pebble Beach" %>
+      <br>
+      Course Description:
+      <br>
+        <%= form.text_area :description, :size=>"50", placeholder: "Describe a few things you enjoyed about the course" %>
+      <br>
+      Course URL:
+      <br>
+        <%= form.url_field :url, placeholder: "https://www.pebblebeach.com", :size=>"30" %>
+      <br>
+      Course Country:
+      <br>
+        <%= form.text_field :country, placeholder: "USA" %>
+      <br>
+      <%= form.submit %>
+      <% end %>
+  </form>
+  </div>
+
+
+  <div class="rightblock">
+    <h2> My golf courses:</h2>
+    <table>
+      <tr>
+        <th>Course name</th>
+        <th>Course description</th>
+        <th>Course URL</th>
+        <th>Course country</th>
+      </tr>
+
+      <% @golfs.each do |golf| %>
+        <tr>
+          <td><%= golf.name %></td>
+          <td><%= golf.description %></td>
+          <td><%= golf.url %></td>
+          <td><%= golf.country %></td>
+        </tr>
+      <% end %>
+    </table>
+  </div>
