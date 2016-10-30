@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
+  include AlgoliaSearch
 
   def index
   	@golfs = Golf.all
@@ -14,4 +15,9 @@ class WelcomeController < ApplicationController
   	Golf.create!(params.require(:golf).permit(:name, :description, :url, :country))
   	redirect_to root_url
   end
+
+  algoliasearch do
+    attribute :first_name, :last_name, :email
+  end
+
 end

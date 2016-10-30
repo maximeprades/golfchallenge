@@ -14,7 +14,12 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Connect to Postgresql database
 gem 'pg'
+
+# no idea what this does but a tutorial said to add it :)
 gem 'rails_12factor', group: :production
+
+# Algolia search gem
+gem "algoliasearch-rails"
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
