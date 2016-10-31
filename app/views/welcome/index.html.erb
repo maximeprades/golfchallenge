@@ -1,5 +1,24 @@
 <div class="search">
- <input type="text" class="searchbox" name="search" placeholder="Search..">
+ <input type="text" id="search-input" />
+ <script src="https://cdn.jsdelivr.net/algoliasearch/3/algoliasearch.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
+ <script>
+   var client = algoliasearch("OLJQ7X6PWX", "9a3ee497a4a349d934cc4d974246fbf8")
+   var index = client.initIndex('Golf');
+   autocomplete('#search-input', {hint: false}, [
+     {
+       source: autocomplete.sources.hits(index, {hitsPerPage: 5}),
+       displayKey: 'my_attribute',
+       templates: {
+         suggestion: function(suggestion) {
+           return suggestion._highlightResult.name.value+' - '+suggestion._highlightResult.country.value;
+         }
+       }
+     }
+   ]).on('autocomplete:selected', function(event, suggestion, dataset) {
+     console.log(suggestion, dataset);
+   });
+ </script>
 </div>
 
 <div class="separator">

@@ -16,7 +16,6 @@
     max-height: 800px;
     margin: 0px 10px 10px 10px;
     padding: 1em;
-    border: 1px solid gray;
     height: 400px;
 }
 
@@ -24,7 +23,6 @@
     margin-left: 410px;
     padding: 1em;
     margin: 10px;
-    border: 1px solid gray;
     overflow: hidden;
     height: 400px;
 }
@@ -48,7 +46,6 @@ table {
     width: 100%;
 }
 
-
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
@@ -57,4 +54,33 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+.algolia-autocomplete {
+  width: 100%;
+}
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 100%;
+  min-height: 30px;
+  text-indent: 10px;
+}
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-top: none;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #B2D7FF;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
 }

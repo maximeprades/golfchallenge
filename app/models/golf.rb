@@ -5,7 +5,7 @@ class Golf < ActiveRecord::Base
     validates :name, presence: true
 
     algoliasearch do
-      attribute :name
+      attribute :name, :description, :country
     end
 
 end
